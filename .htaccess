@@ -1,0 +1,10 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:app|database|docs|tests|\.git)(?:/|$) - [F,L]
+</IfModule>
+
+<FilesMatch "\.(sql|md|ya?ml)$">
+    Require all denied
+</FilesMatch>

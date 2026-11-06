@@ -1,7 +1,7 @@
 -- Datos de prueba para clinica_veterinaria.
 -- Ejecutar despues de database/schema.sql.
--- Todos los usuarios comparten un hash bcrypt de demostracion; reemplazarlo
--- por hashes generados por la aplicacion antes de usar datos reales.
+-- Credencial de demostracion para todas las cuentas: Demo1234!
+-- Reemplazarla por contrasenas individuales antes de usar datos reales.
 
 USE clinica_veterinaria;
 
@@ -11,15 +11,15 @@ INSERT INTO usuarios
     (id_usuario, nombre, apellido, correo, password_hash, rol, registro_profesional)
 VALUES
     (1, 'Camila', 'Torres', 'admin@veterinaria.local',
-     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Administrador', NULL),
+     '$2y$10$8nbRSyC6CaDn4XDw8.JfgeyAhvvD5H.Aha9XU70ZpRPmKlyhMQdLK', 'Administrador', NULL),
     (2, 'Laura', 'Mendez', 'recepcion@veterinaria.local',
-     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Recepcionista', NULL),
+     '$2y$10$8nbRSyC6CaDn4XDw8.JfgeyAhvvD5H.Aha9XU70ZpRPmKlyhMQdLK', 'Recepcionista', NULL),
     (3, 'Andres', 'Lopez', 'andres.lopez@veterinaria.local',
-     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Veterinario', 'VET-1001'),
+     '$2y$10$8nbRSyC6CaDn4XDw8.JfgeyAhvvD5H.Aha9XU70ZpRPmKlyhMQdLK', 'Veterinario', 'VET-1001'),
     (4, 'Valentina', 'Gomez', 'valentina.gomez@veterinaria.local',
-     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Veterinario', 'VET-1002'),
+     '$2y$10$8nbRSyC6CaDn4XDw8.JfgeyAhvvD5H.Aha9XU70ZpRPmKlyhMQdLK', 'Veterinario', 'VET-1002'),
     (5, 'Mateo', 'Ruiz', 'mateo.ruiz@veterinaria.local',
-     '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', 'Veterinario', 'VET-1003');
+     '$2y$10$8nbRSyC6CaDn4XDw8.JfgeyAhvvD5H.Aha9XU70ZpRPmKlyhMQdLK', 'Veterinario', 'VET-1003');
 
 INSERT INTO propietarios
     (id_propietario, tipo_documento, documento, nombres, apellidos, telefono, direccion, correo)

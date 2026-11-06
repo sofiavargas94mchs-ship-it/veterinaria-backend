@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-$host = '127.0.0.1';
-$database = 'clinica_veterinaria';
-$username = 'root';
-$password = '';
+$host = getenv('DB_HOST') ?: '127.0.0.1';
+$database = getenv('DB_NAME') ?: 'clinica_veterinaria';
+$username = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASSWORD') ?: '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host={$host};dbname={$database};charset={$charset}";
